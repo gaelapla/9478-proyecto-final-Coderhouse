@@ -1,0 +1,40 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.header {
+  background-color: $color-primario;
+  padding: 16px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+
+  @include desktop {
+    padding: 20px 40px;
+    flex-wrap: nowrap;
+  }
+}
+
+.logo {
+  color: $blanco;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.hero {
+  background-image: url('../images/hero-fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  padding: 40px;
+  min-height: 300px;
+  margin-left: -40px;
+  margin-right: -40px;
+  margin-bottom: 40px;
+}

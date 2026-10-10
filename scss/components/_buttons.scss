@@ -1,0 +1,38 @@
+@use '../utilities/variables' as *;
+
+%boton-base {
+  background-color: $color-acento-oscuro;
+  color: $blanco;
+  border-radius: $radio-md;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.boton {
+  @extend %boton-base;
+  padding: 10px 20px;
+  border: none;
+  font-family: $fuente-texto;
+}
+
+.btn-sesion {
+  @extend %boton-base;
+  color: $blanco !important;
+  padding: 8px 16px !important;
+  display: inline-block;
+  width: auto;
+  align-self: flex-start;
+  margin-left: 0;
+  transition: background-color 0.3s ease, transform 0.15s ease;
+
+  &:hover {
+    background-color: $color-primario;
+  }
+  &:focus {
+    outline: 2px solid $color-texto;
+    outline-offset: 2px;
+  }
+  &:active {
+    transform: scale(0.97);
+  }
+}

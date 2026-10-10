@@ -1,0 +1,14 @@
+@use '../utilities/variables' as *;
+
+.form-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  input, textarea {
+    padding: 8px;
+    border: 1px solid $color-secundario;
+    border-radius: $radio-sm;
+    font-family: $fuente-texto;
+  }
+}

@@ -1,0 +1,56 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.pregunta {
+  margin-bottom: 24px;
+
+  h2 {
+    font-size: 18px;
+    color: $color-verde-oscuro;
+  }
+}
+
+.contacto {
+  display: grid;
+  grid-template-areas:
+    "texto"
+    "formulario";
+  gap: 30px;
+  padding: 40px 20px;
+
+  @include desktop {
+    grid-template-areas: "texto formulario";
+    grid-template-columns: 1fr 1.5fr;
+  }
+}
+
+.contacto-texto {
+  grid-area: texto;
+}
+
+.contacto-formulario {
+  grid-area: formulario;
+}
+
+.pago {
+  display: grid;
+  grid-template-areas:
+    "texto"
+    "medios";
+  gap: 30px;
+  padding: 40px 20px;
+  overflow: hidden;
+
+  @include desktop {
+    grid-template-areas: "texto medios";
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.pago-texto {
+  grid-area: texto;
+}
+
+.pago-medios {
+  grid-area: medios;
+}

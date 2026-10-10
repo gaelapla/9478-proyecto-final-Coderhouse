@@ -1,0 +1,34 @@
+@use 'variables' as *;
+
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin mobile-chico {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin hover-elevar {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: $sombra-hover;
+  }
+}
+
+@mixin tarjeta-borde($padding: 20px) {
+  border: 1px solid $color-secundario;
+  border-radius: $radio-lg;
+  padding: $padding;
+  text-align: center;
+}

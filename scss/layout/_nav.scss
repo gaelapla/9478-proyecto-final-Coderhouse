@@ -1,0 +1,64 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.nav-lista {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  font-size: 14px;
+
+  a {
+    color: $blanco;
+    text-decoration: none;
+    font-family: $fuente-texto;
+  }
+
+  @include desktop {
+    gap: 24px;
+    font-size: 16px;
+  }
+}
+
+.nav-derecha {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navbar {
+  background-color: $color-primario;
+  padding: 20px 40px;
+
+  @include mobile-chico {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+.navbar-brand {
+  color: $blanco;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.nav-link {
+  color: $blanco;
+  font-family: $fuente-texto;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $color-acento;
+  }
+  &:focus {
+    outline: 2px solid $color-acento;
+    outline-offset: 2px;
+  }
+  &:active {
+    color: $color-primario;
+  }
+}
+
+.navbar-nav .nav-item:has(.btn-sesion) {
+  align-self: flex-start;
+}

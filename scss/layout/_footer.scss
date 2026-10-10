@@ -1,0 +1,29 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.footer {
+  background-color: $color-primario;
+  color: $blanco;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  a {
+    color: $blanco;
+    text-decoration: none;
+  }
+}
+
+footer {
+  @include mobile-chico {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
