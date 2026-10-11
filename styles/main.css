@@ -228,6 +228,16 @@ p {
   grid-area: medios;
 }
 
+.titulo-historia,
+.historia {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.titulo-historia {
+  padding-top: 30px;
+}
+
 .btn-sesion, .boton {
   background-color: #9E4F43;
   color: #fff;
