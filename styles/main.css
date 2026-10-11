@@ -238,6 +238,17 @@ p {
   padding-top: 30px;
 }
 
+.titulo-pagina,
+.intro-pagina,
+.preguntas-lista {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.titulo-pagina {
+  padding-top: 30px;
+}
+
 .btn-sesion, .boton {
   background-color: #9E4F43;
   color: #fff;
