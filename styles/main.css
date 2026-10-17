@@ -443,3 +443,54 @@ p {
   max-width: 700px;
   margin: 0 auto;
 }
+
+
+/* Tarjetas: preguntas frecuentes y sobre nosotros */
+.titulo-pagina,
+.intro-pagina,
+.about h1 {
+  text-align: center;
+}
+
+.preguntas-lista,
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+}
+
+.pregunta,
+.about-grid .historia {
+  background: #fff;
+  border: 1px solid #F4EFE6;
+  border-top: 4px solid #5C7A54;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.pregunta:hover,
+.about-grid .historia:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.pregunta h2 {
+  margin-bottom: 12px;
+}
+.about-grid .historia h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.historia-intro {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+.historia-intro p {
+  font-size: 18px;
+}
